@@ -2,8 +2,8 @@
 select ch.channel_class,
        ch.channel_id,
        co.unit_price
-  from sh.channels ch
-  join costs co
+  from sh.CHANNELS ch
+  join sh.costs co
 on ch.channel_id = co.channel_id
  order by ch.channel_class;
 
